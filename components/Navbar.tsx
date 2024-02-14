@@ -4,6 +4,7 @@ import ThemeToggle from "./ThemeToggle"
 import { UserButton } from "@clerk/nextjs"
 import Image from "next/image"
 import Logo from "@/assets/logo.svg"
+import Link from "next/link"
 
 export default function Navbar() {
   return (
@@ -12,11 +13,13 @@ export default function Navbar() {
       flex items-center justify-between"
     >
       <div className="flex items-center gap-4">
-        <Image
-          src={Logo}
-          alt="logo"
-          className="block lg:hidden mx-auto w-[120px]"
-        />
+        <Link className="lg:hidden" href="/jobs">
+          <Image
+            src={Logo}
+            alt="logo"
+            className="block lg:hidden mx-auto w-[120px]"
+          />
+        </Link>
         <LinksDropdown />
       </div>
       <div className="flex items-center gap-4">

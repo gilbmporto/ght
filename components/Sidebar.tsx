@@ -12,7 +12,9 @@ export default function Sidebar() {
 
   return (
     <aside className="py-3 px-8 bg-muted h-full">
-      <Image src={Logo} alt="logo" className="mx-auto w-48" />
+      <Link href="/jobs">
+        <Image src={Logo} alt="logo" className="mx-auto w-48" />
+      </Link>
       <div className="flex flex-col mt-16 gap-4">
         {links.map((link, i) => (
           <Button
