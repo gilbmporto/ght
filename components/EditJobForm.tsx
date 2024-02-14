@@ -33,19 +33,23 @@ export default function EditJobForm({ jobId }: { jobId: string }) {
     onSuccess: (data) => {
       if (!data) {
         toast({
-          description: "there was an error",
+          title: "Job Creation Failed",
+          description: "There was an error",
         })
         return
       }
+
       toast({
         title: "Job updated!",
         description: "Your job has been updated successfully.",
         duration: 5000,
         variant: "default",
       })
+
       queryClient.invalidateQueries({ queryKey: ["jobs"] })
       queryClient.invalidateQueries({ queryKey: ["job", jobId] })
       queryClient.invalidateQueries({ queryKey: ["stats"] })
+
       router.push("/jobs")
     },
   })
