@@ -28,7 +28,11 @@ export default function Home() {
             <Link href="/add-job">Get Started</Link>
           </Button>
         </div>
-        <Image src={MainImage} alt="Main Image" className="hidden lg:block" />
+        <Image
+          src={MainImage}
+          alt="Main Image"
+          className="hidden lg:block rounded-xl"
+        />
       </section>
     </main>
   )
