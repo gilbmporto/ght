@@ -19,10 +19,11 @@ export default function Home() {
             job <span className="text-primary">tracking</span> app
           </h1>
           <p className="leading-loose max-w-md mt-4">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores
-            quibusdam porro sed facilis unde vitae libero blanditiis optio
-            molestias doloremque. Est corporis inventore modi, quam eligendi id
-            nostrum officia nisi.
+            Join us and discover how our Job Tracking App can transform your job
+            search into a more organized, effective, and fulfilling venture. Let
+            us help you keep track of your applications, deadlines, and
+            interviews, all in one place, so you can focus on what truly
+            matters: landing your dream job.
           </p>
           <Button asChild className="mt-4">
             <Link href="/add-job">Get Started</Link>
